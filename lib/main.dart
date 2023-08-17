@@ -8,9 +8,9 @@ import 'admin_upload.dart';
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(admin_upload());
 }
-
+/*
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -236,4 +236,4 @@ class _LoginPageState2 extends State<LoginPage2> {
       ),
     );
   }
-}
+}*/
