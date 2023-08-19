@@ -112,11 +112,19 @@ class _MainPageState extends State<MainPage> {
                   : Container(),
               SizedBox(height: 48),
 
+<<<<<<< HEAD
               /*ButtonWidget(
                 text: 'Upload File',
                 icon: Icons.cloud_upload_outlined,
                 onClicked: uploadFile,
               ),*/
+=======
+              ButtonWidget(
+                text: 'Upload File',
+                icon: Icons.cloud_upload_outlined,
+                onClicked: uploadFile,
+              ),
+>>>>>>> 2cab47dabddbb1436a27a4f37f0136e397759bfa
               // Add a button to navigate to the preview screen
               SizedBox(height: 20),
             // Add a button to navigate to the preview screen
@@ -128,8 +136,12 @@ class _MainPageState extends State<MainPage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
+<<<<<<< HEAD
                             //ImagePreviewScreen(image: file!),
                         ImageCropperScreen(imageFile: file!)
+=======
+                            ImagePreviewScreen(image: file!),
+>>>>>>> 2cab47dabddbb1436a27a4f37f0136e397759bfa
                       ),
                     );
                 },
@@ -214,6 +226,7 @@ class ImagePreviewScreen extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
 Future<File?> _cropImage({required File imageFile}) async {
   CroppedFile? croppedImage =
   await ImageCropper().cropImage(sourcePath: imageFile.path);
@@ -221,6 +234,8 @@ Future<File?> _cropImage({required File imageFile}) async {
   return File(croppedImage.path);
 }
 
+=======
+>>>>>>> 2cab47dabddbb1436a27a4f37f0136e397759bfa
 
 /*class ImagePreviewScreen extends StatefulWidget {
   final File image;
